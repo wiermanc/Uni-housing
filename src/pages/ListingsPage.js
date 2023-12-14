@@ -55,13 +55,13 @@ function ListingsPage() {
     setHasAirConditioning(false);
     setHasHeating(false);
     setHasParking(false);
-    // Add other states you want to reset
+    
   };
 
   const cardStyle = {
-    backgroundColor: 'white', // Ensure this color works with your design
-    color: 'black', // Text color for readability
-    // Add other styles as necessary
+    backgroundColor: 'white', 
+    color: 'black', 
+    
   };
 
   const applyFilters = () => {
@@ -84,11 +84,10 @@ function ListingsPage() {
       minBathrooms,
       moveInMonth,
       moveOutMonth,
-      // any other filters
     }));
   
     setDisplayedListings(filteredListings);
-    setShowMoreFilters(false); // To close the dropdown
+    setShowMoreFilters(false); 
   };
 
   useEffect(() => {
@@ -102,7 +101,6 @@ function ListingsPage() {
       setMinBathrooms(savedFilters.minBathrooms);
       setMoveInMonth(savedFilters.moveInMonth);
       setMoveOutMonth(savedFilters.moveOutMonth);
-      // set any other filters
     }
   }, []);
   

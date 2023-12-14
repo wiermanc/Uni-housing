@@ -8,7 +8,7 @@ function FilterBar({ filters, setFilters }) {
 
   return (
     <div className="filter-bar">
-      {/* Existing Filters */}
+      {/* Input for minimum price filter */}
       <input
         type="number"
         name="minPrice"
@@ -16,6 +16,7 @@ function FilterBar({ filters, setFilters }) {
         value={filters.minPrice}
         onChange={handleFilterChange}
       />
+      {/* Input for maximum price filter */}
       <input
         type="number"
         name="maxPrice"
@@ -23,6 +24,7 @@ function FilterBar({ filters, setFilters }) {
         value={filters.maxPrice}
         onChange={handleFilterChange}
       />
+      {/* Input for minimum number of bedrooms filter */}
       <input
         type="number"
         name="minBedrooms"
@@ -30,6 +32,7 @@ function FilterBar({ filters, setFilters }) {
         value={filters.minBedrooms}
         onChange={handleFilterChange}
       />
+      {/* Input for minimum number of bathrooms filter */}
       <input
         type="number"
         name="minBathrooms"
@@ -37,8 +40,7 @@ function FilterBar({ filters, setFilters }) {
         value={filters.minBathrooms}
         onChange={handleFilterChange}
       />
-
-      {/* University Filter Dropdown */}
+      {/* Dropdown for selecting university filter */}
       <select
         name="university"
         value={filters.university}
@@ -49,8 +51,7 @@ function FilterBar({ filters, setFilters }) {
         <option value="Arizona State University">Arizona State University</option>
         <option value="Northern Arizona University">Northern Arizona University</option>
       </select>
-
-      {/* Reset Button */}
+      {/* Button to clear all filters */}
       <button onClick={() => setFilters({ minPrice: '', maxPrice: '', minBedrooms: '', minBathrooms: '', university: '' })}>
         Reset
       </button>

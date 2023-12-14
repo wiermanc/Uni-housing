@@ -39,13 +39,13 @@ function ListPropertyPage() {
   const [laundry, setLaundry] = useState('');
   const [bedroomImage, setBedroomImage] = useState(null);
   const [firstName, setFirstName] = useState('');
-const [lastName, setLastName] = useState('');
-const [dob, setDob] = useState(''); // Assuming a string format like 'YYYY-MM-DD'
-const [governmentIdFront, setGovernmentIdFront] = useState(null);
-const [governmentIdBack, setGovernmentIdBack] = useState(null);
-const [validationErrors, setValidationErrors] = useState({});
+  const [lastName, setLastName] = useState('');
+  const [dob, setDob] = useState(''); 
+  const [governmentIdFront, setGovernmentIdFront] = useState(null);
+  const [governmentIdBack, setGovernmentIdBack] = useState(null);
+  const [validationErrors, setValidationErrors] = useState({});
 
-  
+
   useEffect(() => {
     setRooms(Array.from({ length: totalBedrooms }, (_, index) => ({
       size: '',
@@ -53,7 +53,7 @@ const [validationErrors, setValidationErrors] = useState({});
       bathroom: 'Shared',
       rent: '',
       sharedWith: [],
-      securityDeposit: '', 
+      securityDeposit: '',
     })));
   }, [totalBedrooms]);
 
@@ -103,15 +103,15 @@ const [validationErrors, setValidationErrors] = useState({});
     setGovernmentIdBack(null);
   };
 
-  
-  
 
-const handleSubmit = (e) => {
-  e.preventDefault();
 
- 
-  
-  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+
+
+
 
     const formData = {
       propertyType,
@@ -138,11 +138,11 @@ const handleSubmit = (e) => {
       heating,
       securityDeposit,
       firstName,
-  lastName,
-  dob,
-  governmentIdFront,
-  governmentIdBack
-      
+      lastName,
+      dob,
+      governmentIdFront,
+      governmentIdBack
+
     };
     resetForm();
   };
@@ -197,7 +197,7 @@ const handleSubmit = (e) => {
     );
     setRooms(updatedRooms);
   };
-  
+
   const handleRoomRentChange = (index, value) => {
     const updatedRooms = rooms.map((room, roomIndex) =>
       roomIndex === index ? { ...room, rent: value } : room
@@ -244,7 +244,7 @@ const handleSubmit = (e) => {
       return room;
     }));
   };
-  
+
 
 
   return (
@@ -264,38 +264,38 @@ const handleSubmit = (e) => {
         <div className="list-property-form-group">
           <label>Title:</label>
           <input type="text" value={title} onChange={(e) => setTitle(e.target.value)}
-           placeholder="Ex: Modern 2-BR Apartment Downtown" />
+            placeholder="Ex: Modern 2-BR Apartment Downtown" />
         </div>
 
         <div className="list-property-form-group">
           <label>Description: (max 500 characters)</label>
-          <textarea value={description} onChange={(e) => setDescription(e.target.value)} maxLength={500} 
-          placeholder="Ex: A large house with a shared kitchen, living area, and garden."/>
+          <textarea value={description} onChange={(e) => setDescription(e.target.value)} maxLength={500}
+            placeholder="Ex: A large house with a shared kitchen, living area, and garden." />
           <div className="character-count">{description.length} / 500</div>
         </div>
 
         {propertyType === 'Full Property' && (
-        <>
-          <div className="list-property-form-group">
-            <label>Number of Bedrooms:</label>
-            <input
-              type="number"
-              value={bedrooms}
-              onChange={(e) => setBedrooms(e.target.value)}
-              placeholder="Enter number of bedrooms"
-            />
-          </div>
-          <div className="list-property-form-group">
-            <label>Number of Bathrooms:</label>
-            <input
-              type="number"
-              value={bathrooms}
-              onChange={(e) => setBathrooms(e.target.value)}
-              placeholder="Enter number of bathrooms"
-            />
-          </div>
-        </>
-      )}
+          <>
+            <div className="list-property-form-group">
+              <label>Number of Bedrooms:</label>
+              <input
+                type="number"
+                value={bedrooms}
+                onChange={(e) => setBedrooms(e.target.value)}
+                placeholder="Enter number of bedrooms"
+              />
+            </div>
+            <div className="list-property-form-group">
+              <label>Number of Bathrooms:</label>
+              <input
+                type="number"
+                value={bathrooms}
+                onChange={(e) => setBathrooms(e.target.value)}
+                placeholder="Enter number of bathrooms"
+              />
+            </div>
+          </>
+        )}
 
         {propertyType === 'Full Property' && (
           <div className="list-property-form-group">
@@ -327,49 +327,49 @@ const handleSubmit = (e) => {
         </div>
 
         {propertyType === 'Full Property' && (
-        <div className="list-property-form-group">
-          <label htmlFor="security-deposit">Security Deposit:</label>
-          <div className="input-with-dollar-sign">
-            <input 
-              type="number" 
-              id="security-deposit"
-              className="rent-input"
-              value={securityDeposit}
-              onChange={(e) => setSecurityDeposit(e.target.value)}
-              placeholder="Enter security deposit for the property"
-            />
+          <div className="list-property-form-group">
+            <label htmlFor="security-deposit">Security Deposit:</label>
+            <div className="input-with-dollar-sign">
+              <input
+                type="number"
+                id="security-deposit"
+                className="rent-input"
+                value={securityDeposit}
+                onChange={(e) => setSecurityDeposit(e.target.value)}
+                placeholder="Enter security deposit for the property"
+              />
+            </div>
           </div>
+        )}
+
+        <div className="list-property-form-group">
+          <label>Nearest University:</label>
+          <select
+            value={nearestUniversity}
+            onChange={(e) => setNearestUniversity(e.target.value)}
+          >
+            <option value="">Select University</option>
+            <option value="University of Arizona">University of Arizona</option>
+            <option value="Arizona State University">Arizona State University</option>
+            <option value="Northern Arizona University">Northern Arizona University</option>
+            <option value="Other">Other</option>
+          </select>
+
+          {nearestUniversity === 'Other' && (
+            <input
+              type="text"
+              value={customUniversity}
+              onChange={(e) => setCustomUniversity(e.target.value)}
+              placeholder="Type the university name"
+            />
+          )}
         </div>
-      )}
-
-<div className="list-property-form-group">
-  <label>Nearest University:</label>
-  <select
-    value={nearestUniversity}
-    onChange={(e) => setNearestUniversity(e.target.value)}
-  >
-    <option value="">Select University</option>
-    <option value="University of Arizona">University of Arizona</option>
-    <option value="Arizona State University">Arizona State University</option>
-    <option value="Northern Arizona University">Northern Arizona University</option>
-    <option value="Other">Other</option>
-  </select>
-
-  {nearestUniversity === 'Other' && (
-    <input
-      type="text"
-      value={customUniversity}
-      onChange={(e) => setCustomUniversity(e.target.value)}
-      placeholder="Type the university name"
-    />
-  )}
-</div>
 
 
         <div className="list-property-form-group">
           <label>Distance to University (Miles):</label>
-          <input type="text" value={distanceToUniversity} onChange={(e) => setDistanceToUniversity(e.target.value)} 
-          placeholder="Ex: 1.7"/>
+          <input type="text" value={distanceToUniversity} onChange={(e) => setDistanceToUniversity(e.target.value)}
+            placeholder="Ex: 1.7" />
         </div>
 
         <div className="list-property-form-group">
@@ -382,18 +382,18 @@ const handleSubmit = (e) => {
         </div>
 
 
-      <div className="list-property-form-group">
-        <label>Laundry:</label>
-        <select
-          value={laundry}
-          onChange={(e) => setLaundry(e.target.value)}
-        >
-          <option value="">Select Laundry Option</option>
-          <option value="In Unit">In Unit</option>
-          <option value="Shared">Shared</option>
-          <option value="None">None</option>
-        </select>
-      </div>
+        <div className="list-property-form-group">
+          <label>Laundry:</label>
+          <select
+            value={laundry}
+            onChange={(e) => setLaundry(e.target.value)}
+          >
+            <option value="">Select Laundry Option</option>
+            <option value="In Unit">In Unit</option>
+            <option value="Shared">Shared</option>
+            <option value="None">None</option>
+          </select>
+        </div>
 
         <div className="list-property-form-group">
           <label>Pets Allowed:</label>
@@ -422,40 +422,40 @@ const handleSubmit = (e) => {
 
         <div className="list-property-form-group">
           <label>Amenities (comma separated):</label>
-          <input type="text" value={amenities} onChange={(e) => setAmenities(e.target.value)} 
-          placeholder="Ex: Private Yard, Garage, Fireplace"/>
+          <input type="text" value={amenities} onChange={(e) => setAmenities(e.target.value)}
+            placeholder="Ex: Private Yard, Garage, Fireplace" />
         </div>
 
         <div className="list-property-form-group">
           <label>Address:</label>
-          <input 
-            type="text" 
-            value={street} 
-            onChange={(e) => setStreet(e.target.value)} 
+          <input
+            type="text"
+            value={street}
+            onChange={(e) => setStreet(e.target.value)}
             placeholder="Street Address"
           />
-          <input 
-            type="text" 
-            value={city} 
-            onChange={(e) => setCity(e.target.value)} 
+          <input
+            type="text"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
             placeholder="City"
           />
-          <input 
-            type="text" 
-            value={state} 
-            onChange={(e) => setState(e.target.value)} 
+          <input
+            type="text"
+            value={state}
+            onChange={(e) => setState(e.target.value)}
             placeholder="State"
           />
-          <input 
-            type="text" 
-            value={zipCode} 
-            onChange={(e) => setZipCode(e.target.value)} 
+          <input
+            type="text"
+            value={zipCode}
+            onChange={(e) => setZipCode(e.target.value)}
             placeholder="ZIP Code"
           />
-          <input 
-            type="text" 
-            value={unit} 
-            onChange={(e) => setUnit(e.target.value)} 
+          <input
+            type="text"
+            value={unit}
+            onChange={(e) => setUnit(e.target.value)}
             placeholder="Unit # (optional)"
           />
         </div>
@@ -464,24 +464,24 @@ const handleSubmit = (e) => {
           <label>Display Address in Listing?</label>
           <div className="utilities-included-container">
             <label htmlFor="display-address-yes">
-              <input 
-                type="radio" 
-                id="display-address-yes" 
-                name="display-address" 
-                value="Yes" 
-                checked={displayAddress === 'Yes'} 
-                onChange={() => handleDisplayAddressChange('Yes')} 
+              <input
+                type="radio"
+                id="display-address-yes"
+                name="display-address"
+                value="Yes"
+                checked={displayAddress === 'Yes'}
+                onChange={() => handleDisplayAddressChange('Yes')}
               />
               Yes
             </label>
             <label htmlFor="display-address-no">
-              <input 
-                type="radio" 
-                id="display-address-no" 
-                name="display-address" 
-                value="No" 
-                checked={displayAddress === 'No'} 
-                onChange={() => handleDisplayAddressChange('No')} 
+              <input
+                type="radio"
+                id="display-address-no"
+                name="display-address"
+                value="No"
+                checked={displayAddress === 'No'}
+                onChange={() => handleDisplayAddressChange('No')}
               />
               No
             </label>
@@ -490,32 +490,32 @@ const handleSubmit = (e) => {
 
 
 
-      
+
 
 
         <div className="list-property-form-group">
           <label>Contact Message:</label>
-          <textarea 
-            value={contactMessage} 
-            onChange={(e) => setContactMessage(e.target.value)} 
+          <textarea
+            value={contactMessage}
+            onChange={(e) => setContactMessage(e.target.value)}
             placeholder="Please write a short descriptive message with your preferred method of contact for prospective renters."
           />
         </div>
 
         <div className="list-property-form-group">
           <label>Lease Start Date:</label>
-          <input 
-            type="date" 
-            value={leaseStartDate} 
+          <input
+            type="date"
+            value={leaseStartDate}
             onChange={(e) => setLeaseStartDate(e.target.value)}
           />
         </div>
 
         <div className="list-property-form-group">
           <label>Lease End Date:</label>
-          <input 
-            type="date" 
-            value={leaseEndDate} 
+          <input
+            type="date"
+            value={leaseEndDate}
             onChange={(e) => setLeaseEndDate(e.target.value)}
           />
         </div>
@@ -523,321 +523,321 @@ const handleSubmit = (e) => {
         <div className="list-property-form-group">
           <label>Available Units:</label>
           <input type="number" value={availableUnits} onChange={(e) => setAvailableUnits(e.target.value)}
-           placeholder="If listing only a single unit put 1, if listing more than 1 IDENTICAL unit put the amount you want to list." />
+            placeholder="If listing only a single unit put 1, if listing more than 1 IDENTICAL unit put the amount you want to list." />
         </div>
 
         {propertyType === 'Individual Room' && (
           <div className="list-property-form-group">
             <p>
-              To ensure prospective tenants have a good understanding of the property, we ask that 
-              you list all rooms in the property. You will be asked to label which rooms are available 
-              to rent, and which are filled along with if the bedrooms assigned bathroom is shared 
+              To ensure prospective tenants have a good understanding of the property, we ask that
+              you list all rooms in the property. You will be asked to label which rooms are available
+              to rent, and which are filled along with if the bedrooms assigned bathroom is shared
               with occupants of other bedrooms.
             </p>
             <label>Total Bedrooms in Property:</label>
-            <input 
-              type="number" 
-              value={totalBedrooms} 
+            <input
+              type="number"
+              value={totalBedrooms}
               onChange={handleTotalBedroomsChange}
-              min="1" 
-              max="20" 
+              min="1"
+              max="20"
             />
           </div>
         )}
 
-{propertyType === 'Individual Room' && rooms.map((room, index) => (
-  <div key={index} className="room-details">
-    <h3>Bedroom {index + 1}</h3>
-    
-    <div className="list-property-form-group">
-      <label htmlFor={`room-status-${index}`}>Room Status:</label>
-      <select 
-        id={`room-status-${index}`}
-        value={room.status} 
-        onChange={(e) => handleRoomStatusChange(index, e.target.value)}
-      >
-        <option value="Open">Open</option>
-        <option value="Full">Full</option>
-      </select>
-    </div>
+        {propertyType === 'Individual Room' && rooms.map((room, index) => (
+          <div key={index} className="room-details">
+            <h3>Bedroom {index + 1}</h3>
 
-    
-    {room.status !== 'Full' && (
-      <div className="list-property-form-group">
-        <label htmlFor={`room-rent-${index}`}>Monthly Rent:</label>
-        <input 
-          type="number" 
-          id={`room-rent-${index}`}
-          value={room.rent || ''} 
-          onChange={(e) => handleRoomRentChange(index, e.target.value)}
-          placeholder="Enter monthly rent"
-        />
-      </div>
-    )}
+            <div className="list-property-form-group">
+              <label htmlFor={`room-status-${index}`}>Room Status:</label>
+              <select
+                id={`room-status-${index}`}
+                value={room.status}
+                onChange={(e) => handleRoomStatusChange(index, e.target.value)}
+              >
+                <option value="Open">Open</option>
+                <option value="Full">Full</option>
+              </select>
+            </div>
 
-{room.status === 'Open' && (
-  <>
-    <div className="list-property-form-group">
-      <label htmlFor={`room-security-deposit-${index}`}>Security Deposit for Room {index + 1}:</label>
-      <input 
-        type="number" 
-        id={`room-security-deposit-${index}`}
-        value={room.securityDeposit} 
-        onChange={(e) => handleRoomChange(index, 'securityDeposit', e.target.value)}
-        placeholder="Enter security deposit for this room"
-      />
-    </div>
-    <div className="list-property-form-group">
-  <label>Image for Bedroom:</label>
-  <input 
-    type="file" 
-    onChange={handleBedroomImageChange}
-    accept="image/*" 
-  />
-  {bedroomImage && (
-    <img 
-      src={URL.createObjectURL(bedroomImage)}
-      alt="Bedroom Preview"
-      style={{ width: '100px', height: '100px' }} 
-    />
-  )}
-</div>
-  </>
-)}
 
-    
+            {room.status !== 'Full' && (
+              <div className="list-property-form-group">
+                <label htmlFor={`room-rent-${index}`}>Monthly Rent:</label>
+                <input
+                  type="number"
+                  id={`room-rent-${index}`}
+                  value={room.rent || ''}
+                  onChange={(e) => handleRoomRentChange(index, e.target.value)}
+                  placeholder="Enter monthly rent"
+                />
+              </div>
+            )}
 
-<div className="list-property-form-group">
-    <label htmlFor={`room-bathroom-${index}`}>Bathroom:</label>
-    <select 
-      id={`room-bathroom-${index}`}
-      value={room.bathroom} 
-      onChange={(e) => handleBathroomTypeChange(index, e.target.value)}
-    >
-      <option value="Shared">Shared</option>
-      <option value="Private">Private</option>
-    </select>
-  </div>
+            {room.status === 'Open' && (
+              <>
+                <div className="list-property-form-group">
+                  <label htmlFor={`room-security-deposit-${index}`}>Security Deposit for Room {index + 1}:</label>
+                  <input
+                    type="number"
+                    id={`room-security-deposit-${index}`}
+                    value={room.securityDeposit}
+                    onChange={(e) => handleRoomChange(index, 'securityDeposit', e.target.value)}
+                    placeholder="Enter security deposit for this room"
+                  />
+                </div>
+                <div className="list-property-form-group">
+                  <label>Image for Bedroom:</label>
+                  <input
+                    type="file"
+                    onChange={handleBedroomImageChange}
+                    accept="image/*"
+                  />
+                  {bedroomImage && (
+                    <img
+                      src={URL.createObjectURL(bedroomImage)}
+                      alt="Bedroom Preview"
+                      style={{ width: '100px', height: '100px' }}
+                    />
+                  )}
+                </div>
+              </>
+            )}
 
-  {room.bathroom === 'Shared' && (
-  <div className="list-property-form-group">
-    <label>Select bedrooms this bedroom shares its bathroom with:</label>
-    {rooms.map((_, idx) => {
-      if (index !== idx) { 
-        return (
-          <div key={idx} className="checkbox-container">
-            <label>
-              <input 
-                type="checkbox" 
-                checked={room.sharedWith.includes(idx)}
-                onChange={() => handleSharedBathroomCheckbox(index, idx)}
-              /> 
-              Bedroom {idx + 1}
-            </label>
+
+
+            <div className="list-property-form-group">
+              <label htmlFor={`room-bathroom-${index}`}>Bathroom:</label>
+              <select
+                id={`room-bathroom-${index}`}
+                value={room.bathroom}
+                onChange={(e) => handleBathroomTypeChange(index, e.target.value)}
+              >
+                <option value="Shared">Shared</option>
+                <option value="Private">Private</option>
+              </select>
+            </div>
+
+            {room.bathroom === 'Shared' && (
+              <div className="list-property-form-group">
+                <label>Select bedrooms this bedroom shares its bathroom with:</label>
+                {rooms.map((_, idx) => {
+                  if (index !== idx) {
+                    return (
+                      <div key={idx} className="checkbox-container">
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked={room.sharedWith.includes(idx)}
+                            onChange={() => handleSharedBathroomCheckbox(index, idx)}
+                          />
+                          Bedroom {idx + 1}
+                        </label>
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
+            )}
+
+
+
+            <div className="list-property-form-group">
+              <label htmlFor={`room-size-${index}`}>Room Size (Square Feet):</label>
+              <input
+                type="number"
+                id={`room-size-${index}`}
+                value={room.size}
+                onChange={(e) => handleRoomChange(index, 'size', e.target.value)}
+              />
+            </div>
           </div>
-        );
-      }
-      return null;
-    })}
-  </div>
-  )}
+        ))}
 
+        <div className="list-property-form-group">
+          <label>Property Images (max 50):</label>
+          <p className="image-upload-instructions">Upload up to 50 images, ensure the first one uploaded is the one you would like to see displayed on your listing card.</p>
+          <input
+            type="file"
+            multiple
+            onChange={handlePropertyImagesChange}
+            accept="image/*"
+          />
+          <div className="image-preview-container">
+            {propertyImages.map((file, index) => (
+              <img
+                key={index}
+                src={URL.createObjectURL(file)}
+                alt={`Property Preview ${index}`}
+                style={{ width: '100px', height: '100px' }}
+              />
+            ))}
+          </div>
+        </div>
 
-   
-    <div className="list-property-form-group">
-      <label htmlFor={`room-size-${index}`}>Room Size (Square Feet):</label>
-      <input 
-        type="number" 
-        id={`room-size-${index}`}
-        value={room.size} 
-        onChange={(e) => handleRoomChange(index, 'size', e.target.value)}
-      />
-    </div>
-  </div>
-))} 
+        <div className="list-property-form-group">
+          <label>Floorplan Images (max 10):</label>
+          <p className="image-upload-instructions">Please ensure the floorplan images are properly labeled. If listing each room individually, ensure bedroom numbers match the numerical assignments you gave above.</p>
+          <input
+            type="file"
+            multiple
+            onChange={handleFloorplanImagesChange}
+            accept="image/*"
+          />
+          <div className="image-preview-container">
+            {floorplanImages.map((file, index) => (
+              <img
+                key={index}
+                src={URL.createObjectURL(file)}
+                alt={`Floorplan Preview ${index}`}
+                style={{ width: '100px', height: '100px' }}
+              />
+            ))}
+          </div>
+        </div>
 
-<div className="list-property-form-group">
-  <label>Property Images (max 50):</label>
-  <p className="image-upload-instructions">Upload up to 50 images, ensure the first one uploaded is the one you would like to see displayed on your listing card.</p>
-  <input 
-    type="file" 
-    multiple 
-    onChange={handlePropertyImagesChange}
-    accept="image/*"
-  />
-  <div className="image-preview-container">
-    {propertyImages.map((file, index) => (
-      <img 
-        key={index}
-        src={URL.createObjectURL(file)}
-        alt={`Property Preview ${index}`}
-        style={{ width: '100px', height: '100px' }} 
-      />
-    ))}
-  </div>
-</div>
+        <div className="owner-validation-section">
+          <h3 className="section-title">Owner Validation Information</h3>
+          <p className="section-description">
+            The following information is necessary for property ownership validation and to contact you about a property if needed.
+          </p>
 
-<div className="list-property-form-group">
-  <label>Floorplan Images (max 10):</label>
-  <p className="image-upload-instructions">Please ensure the floorplan images are properly labeled. If listing each room individually, ensure bedroom numbers match the numerical assignments you gave above.</p>
-  <input 
-    type="file" 
-    multiple 
-    onChange={handleFloorplanImagesChange}
-    accept="image/*"
-  />
-  <div className="image-preview-container">
-    {floorplanImages.map((file, index) => (
-      <img 
-        key={index}
-        src={URL.createObjectURL(file)}
-        alt={`Floorplan Preview ${index}`}
-        style={{ width: '100px', height: '100px' }} 
-      />
-    ))}
-  </div>
-</div>
+          <div className="list-property-form-group">
+            <label>Email:</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter email address"
+            />
+          </div>
 
-<div className="owner-validation-section">
-  <h3 className="section-title">Owner Validation Information</h3>
-  <p className="section-description">
-    The following information is necessary for property ownership validation and to contact you about a property if needed.
-  </p>
+          <div className="list-property-form-group">
+            <label>Display Email in Listing?</label>
+            <div className="utilities-included-container">
+              <label htmlFor="display-email-yes">
+                <input
+                  type="radio"
+                  id="display-email-yes"
+                  name="display-email"
+                  value="Yes"
+                  checked={displayEmail === 'Yes'}
+                  onChange={() => setDisplayEmail('Yes')}
+                />
+                Yes
+              </label>
+              <label htmlFor="display-email-no">
+                <input
+                  type="radio"
+                  id="display-email-no"
+                  name="display-email"
+                  value="No"
+                  checked={displayEmail === 'No'}
+                  onChange={() => setDisplayEmail('No')}
+                />
+                No
+              </label>
+            </div>
+          </div>
 
-  <div className="list-property-form-group">
-    <label>Email:</label>
-    <input 
-      type="email" 
-      value={email} 
-      onChange={(e) => setEmail(e.target.value)} 
-      placeholder="Enter email address"
-    />
-  </div>
+          <div className="list-property-form-group">
+            <label>Phone Number:</label>
+            <input
+              type="tel"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              placeholder="Enter phone number"
+            />
+          </div>
 
-  <div className="list-property-form-group">
-    <label>Display Email in Listing?</label>
-    <div className="utilities-included-container">
-      <label htmlFor="display-email-yes">
-        <input 
-          type="radio" 
-          id="display-email-yes" 
-          name="display-email" 
-          value="Yes" 
-          checked={displayEmail === 'Yes'} 
-          onChange={() => setDisplayEmail('Yes')} 
-        />
-        Yes
-      </label>
-      <label htmlFor="display-email-no">
-        <input 
-          type="radio" 
-          id="display-email-no" 
-          name="display-email" 
-          value="No" 
-          checked={displayEmail === 'No'} 
-          onChange={() => setDisplayEmail('No')} 
-        />
-        No
-      </label>
-    </div>
-  </div>
+          <div className="list-property-form-group">
+            <label>Display Phone Number in Listing?</label>
+            <div className="utilities-included-container">
+              <label htmlFor="display-phone-yes">
+                <input
+                  type="radio"
+                  id="display-phone-yes"
+                  name="display-phone"
+                  value="Yes"
+                  checked={displayPhone === 'Yes'}
+                  onChange={() => setDisplayPhone('Yes')}
+                />
+                Yes
+              </label>
+              <label htmlFor="display-phone-no">
+                <input
+                  type="radio"
+                  id="display-phone-no"
+                  name="display-phone"
+                  value="No"
+                  checked={displayPhone === 'No'}
+                  onChange={() => setDisplayPhone('No')}
+                />
+                No
+              </label>
+            </div>
+          </div>
 
-  <div className="list-property-form-group">
-    <label>Phone Number:</label>
-    <input 
-      type="tel" 
-      value={phoneNumber} 
-      onChange={(e) => setPhoneNumber(e.target.value)} 
-      placeholder="Enter phone number"
-    />
-  </div>
+          <div className="list-property-form-group">
+            <label>First Name:</label>
+            <input
+              type="text"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              placeholder="Enter first name"
+            />
+          </div>
 
-  <div className="list-property-form-group">
-    <label>Display Phone Number in Listing?</label>
-    <div className="utilities-included-container">
-      <label htmlFor="display-phone-yes">
-        <input 
-          type="radio" 
-          id="display-phone-yes" 
-          name="display-phone" 
-          value="Yes" 
-          checked={displayPhone === 'Yes'} 
-          onChange={() => setDisplayPhone('Yes')} 
-        />
-        Yes
-      </label>
-      <label htmlFor="display-phone-no">
-        <input 
-          type="radio" 
-          id="display-phone-no" 
-          name="display-phone" 
-          value="No" 
-          checked={displayPhone === 'No'} 
-          onChange={() => setDisplayPhone('No')} 
-        />
-        No
-      </label>
-    </div>
-  </div>
+          <div className="list-property-form-group">
+            <label>Last Name:</label>
+            <input
+              type="text"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              placeholder="Enter last name"
+            />
+          </div>
 
-  <div className="list-property-form-group">
-    <label>First Name:</label>
-    <input 
-      type="text" 
-      value={firstName} 
-      onChange={(e) => setFirstName(e.target.value)} 
-      placeholder="Enter first name"
-    />
-  </div>
+          <div className="list-property-form-group">
+            <label>Date of Birth:</label>
+            <input
+              type="date"
+              value={dob}
+              onChange={(e) => setDob(e.target.value)}
+            />
+          </div>
 
-  <div className="list-property-form-group">
-    <label>Last Name:</label>
-    <input 
-      type="text" 
-      value={lastName} 
-      onChange={(e) => setLastName(e.target.value)} 
-      placeholder="Enter last name"
-    />
-  </div>
-
-  <div className="list-property-form-group">
-    <label>Date of Birth:</label>
-    <input 
-      type="date" 
-      value={dob} 
-      onChange={(e) => setDob(e.target.value)}
-    />
-  </div>
-
-  <div className="list-property-form-group">
-    <label>Government ID (Front and Back):</label>
-    <input 
-      type="file" 
-      onChange={(e) => setGovernmentIdFront(e.target.files[0])} 
-      accept="image/*"
-    />
-    <input 
-      type="file" 
-      onChange={(e) => setGovernmentIdBack(e.target.files[0])} 
-      accept="image/*"
-    />
-    <p>Please upload images of the front and back of your government ID.</p>
-    {governmentIdFront && (
-      <img 
-        src={URL.createObjectURL(governmentIdFront)}
-        alt="Government ID Front"
-        style={{ width: '100px', height: '100px', margin: '10px' }}
-      />
-    )}
-    {governmentIdBack && (
-      <img 
-        src={URL.createObjectURL(governmentIdBack)}
-        alt="Government ID Back"
-        style={{ width: '100px', height: '100px', margin: '10px' }}
-      />
-    )}
-  </div>
-</div>
+          <div className="list-property-form-group">
+            <label>Government ID (Front and Back):</label>
+            <input
+              type="file"
+              onChange={(e) => setGovernmentIdFront(e.target.files[0])}
+              accept="image/*"
+            />
+            <input
+              type="file"
+              onChange={(e) => setGovernmentIdBack(e.target.files[0])}
+              accept="image/*"
+            />
+            <p>Please upload images of the front and back of your government ID.</p>
+            {governmentIdFront && (
+              <img
+                src={URL.createObjectURL(governmentIdFront)}
+                alt="Government ID Front"
+                style={{ width: '100px', height: '100px', margin: '10px' }}
+              />
+            )}
+            {governmentIdBack && (
+              <img
+                src={URL.createObjectURL(governmentIdBack)}
+                alt="Government ID Back"
+                style={{ width: '100px', height: '100px', margin: '10px' }}
+              />
+            )}
+          </div>
+        </div>
 
         <div className="button-container">
           <button type="submit" className="submit-btn">

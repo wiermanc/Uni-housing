@@ -42,47 +42,63 @@
     /* Ensure full width for larger input fields */
     width: 100%;
 }
+
 .select-small {
-    width: 50%; /* or any other suitable width */
-    margin: 0 auto; /* This centers the select in the form */
+    width: 50%;
+    /* or any other suitable width */
+    margin: 0 auto;
+    /* This centers the select in the form */
 }
 
 .input-with-dollar-sign {
     position: relative;
     display: flex;
     align-items: center;
-    width: 30%; /* Adjust width as necessary */
+    width: 30%;
+    /* Adjust width as necessary */
 }
 
 .input-with-dollar-sign::before {
     content: '$';
     position: absolute;
-    left: 10px; /* Adjust position as necessary */
+    left: 10px;
+    /* Adjust position as necessary */
     top: 50%;
     transform: translateY(-50%);
-    line-height: 1; /* Make sure this matches the line-height of the input if set */
+    line-height: 1;
+    /* Make sure this matches the line-height of the input if set */
     font-size: 16px;
     color: #555;
     pointer-events: none;
 }
 
 .room-image {
-    max-width: 200px; /* Maximum width */
-    max-height: 200px; /* Maximum height */
-    width: auto; /* Maintain aspect ratio */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* If you want to center your image add this line */
-    margin: 0 auto; /* Center your image horizontally */
-  }
+    max-width: 200px;
+    /* Maximum width */
+    max-height: 200px;
+    /* Maximum height */
+    width: auto;
+    /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* If you want to center your image add this line */
+    margin: 0 auto;
+    /* Center your image horizontally */
+}
 
 .small-input {
-    padding-left: 25px; /* Adjust padding to make room for dollar sign */
-    width: 100%; /* This will take up 100% of the .input-with-dollar-sign width */
-    line-height: 1; /* Set line-height to ensure vertical alignment */
+    padding-left: 25px;
+    /* Adjust padding to make room for dollar sign */
+    width: 100%;
+    /* This will take up 100% of the .input-with-dollar-sign width */
+    line-height: 1;
+    /* Set line-height to ensure vertical alignment */
     /* Additional styles to ensure the text is vertically centered */
     display: flex;
     align-items: center;
-    height: 40px; /* Set a fixed height to help with vertical alignment */
+    height: 40px;
+    /* Set a fixed height to help with vertical alignment */
 }
 
 .list-property-form-group input[type="checkbox"],
@@ -145,41 +161,49 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .section-description {
+}
+
+.section-description {
     font-size: 14px;
     margin-bottom: 15px;
     color: #666;
-  }
+}
 
-  .error {
+.error {
     border: 2px solid red;
-  }
-  
-  .error-input {
-    border: 2px solid #ff6b6b; /* Light red border */
+}
+
+.error-input {
+    border: 2px solid #ff6b6b;
+    /* Light red border */
     /* Keep the rest of your .error-input styles as they are */
-  }
-  
-  .error-message {
-    color: #ff6b6b; /* Light red text color for error message */
+}
+
+.error-message {
+    color: #ff6b6b;
+    /* Light red text color for error message */
     font-size: 14px;
-    margin-top: 8px; /* Increase spacing between input field and error message */
-    margin-left: 10px; /* Add some space to the left */
-    display: block; /* Ensure the message takes its own line */
-    position: relative; /* Position relative to the input */
-    top: -5px; /* Adjust top position as needed */
-    left: 5px; /* Adjust left position as needed */
-  }
-  
-  /* If you are using icons or emojis, keep this as it is */
+    margin-top: 8px;
+    /* Increase spacing between input field and error message */
+    margin-left: 10px;
+    /* Add some space to the left */
+    display: block;
+    /* Ensure the message takes its own line */
+    position: relative;
+    /* Position relative to the input */
+    top: -5px;
+    /* Adjust top position as needed */
+    left: 5px;
+    /* Adjust left position as needed */
+}
+
+/* If you are using icons or emojis, keep this as it is */
 
 .input-with-dollar-sign {
     position: relative;
@@ -203,6 +227,7 @@
     font-size: 16px;
     color: #555;
     pointer-events: none;
+
     .list-property-form {
         width: 100%;
         padding: 20px;
@@ -218,39 +243,46 @@
     }
 
 }
+
 .checkbox-container {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Adds some space between each checkbox line */
-  }
-  
-  .checkbox-container label {
-    margin-right: 10px; /* Space between the checkbox and the label text */
+    margin-bottom: 10px;
+    /* Adds some space between each checkbox line */
+}
+
+.checkbox-container label {
+    margin-right: 10px;
+    /* Space between the checkbox and the label text */
     display: flex;
     align-items: center;
-    white-space: nowrap; /* Prevent the label from wrapping */
-  }
+    white-space: nowrap;
+    /* Prevent the label from wrapping */
+}
 
-  .checkbox-inline {
+.checkbox-inline {
     display: flex;
-    align-items: center; /* Aligns items vertically in the center */
-    margin-right: 8px; /* Adjusts spacing to the right of the label */
-  }
-  
-  /* Styles for the checkbox */
-  .checkbox-container input[type='checkbox'] {
+    align-items: center;
+    /* Aligns items vertically in the center */
+    margin-right: 8px;
+    /* Adjusts spacing to the right of the label */
+}
+
+/* Styles for the checkbox */
+.checkbox-container input[type='checkbox'] {
     margin-right: 5px;
     /* Remove any top or bottom margins that may be affecting alignment */
     margin-top: 0;
     margin-bottom: 0;
-  }
+}
+
 @media (max-width: 768px) {
-    
+
     /* Make inputs full width on smaller screens */
     .list-property-form-group input,
     .list-property-form-group select,
     .list-property-form-group textarea {
         width: 100%;
     }
-    
+
 }

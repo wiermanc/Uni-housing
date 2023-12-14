@@ -20,37 +20,53 @@
 }
 
 .floorplan-image {
-  max-width: 100%;      /* Ensures the image is never wider than its container */
-  max-height: 100%;     /* Ensures the image is never taller than its container */
-  width: auto;          /* Makes the image responsive */
-  height: auto;         /* Maintains the image's aspect ratio */
-  object-fit: contain;  /* Ensures the image scales properly without being cut off */
-  display: block;       /* Removes any extra space below the image */
+  max-width: 100%;
+  /* Ensures the image is never wider than its container */
+  max-height: 100%;
+  /* Ensures the image is never taller than its container */
+  width: auto;
+  /* Makes the image responsive */
+  height: auto;
+  /* Maintains the image's aspect ratio */
+  object-fit: contain;
+  /* Ensures the image scales properly without being cut off */
+  display: block;
+  /* Removes any extra space below the image */
 }
 
 .room-detail-card {
-  border: 1px solid #e1e1e1; /* Light grey border */
-  padding: 1rem; /* Padding inside the card */
-  margin-bottom: 1rem; /* Space between cards */
-  border-radius: 8px; /* Rounded corners for aesthetics */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  background-color: #ffffff; /* White background */
+  border: 1px solid #e1e1e1;
+  /* Light grey border */
+  padding: 1rem;
+  /* Padding inside the card */
+  margin-bottom: 1rem;
+  /* Space between cards */
+  border-radius: 8px;
+  /* Rounded corners for aesthetics */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  background-color: #ffffff;
+  /* White background */
 }
 
 .room-detail {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ccc; /* Adjust as needed for your design */
+  border: 1px solid #ccc;
+  /* Adjust as needed for your design */
   padding: 10px;
-  margin-bottom: 10px; /* This adds space between each room detail box */
+  margin-bottom: 10px;
+  /* This adds space between each room detail box */
 }
 
 .room-info {
-  flex-basis: 70%; /* Adjust the width as necessary */
+  flex-basis: 70%;
+  /* Adjust the width as necessary */
 }
 
-.open-room-info, .room-image-container {
+.open-room-info,
+.room-image-container {
   flex: 1;
 }
 
@@ -64,10 +80,14 @@
 
 
 .room-image {
-  flex-basis: 30%; /* Adjust the width as necessary */
-  max-width: 100%; /* This ensures the image is responsive and does not overflow its container */
-  max-height: 200px; /* Adjust the height as necessary */
-  object-fit: cover; /* This makes sure the image covers the area nicely */
+  flex-basis: 30%;
+  /* Adjust the width as necessary */
+  max-width: 100%;
+  /* This ensures the image is responsive and does not overflow its container */
+  max-height: 200px;
+  /* Adjust the height as necessary */
+  object-fit: cover;
+  /* This makes sure the image covers the area nicely */
 }
 
 /* Add space below the last room card to separate from following content */
@@ -118,41 +138,55 @@
 .room-detail-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px; /* Add space between room details */
+  margin-bottom: 20px;
+  /* Add space between room details */
 }
 
 .room-detail-last {
-  margin-bottom: 0; /* No margin at the bottom for the last item */
+  margin-bottom: 0;
+  /* No margin at the bottom for the last item */
 }
 
 .listing-contact-info {
   margin-top: 20px;
   padding: 15px;
   margin-bottom: 20px;
-  background-color: #f9f9f9; /* Light grey background for emphasis */
-  border-left: 4px solid #0056b3; /* A blue accent on the left border */
-  font-style: italic; /* Optional: Italicize the contact message */
+  background-color: #f9f9f9;
+  /* Light grey background for emphasis */
+  border-left: 4px solid #0056b3;
+  /* A blue accent on the left border */
+  font-style: italic;
+  /* Optional: Italicize the contact message */
 }
 
 .modal-content {
-  max-width: 90%; /* Adjust the percentage as needed */
-  max-height: 80vh; /* Adjust the viewport height as needed */
-  margin: auto; /* Center the image horizontally */
-  display: block; /* This is necessary to apply margin: auto */
+  max-width: 90%;
+  /* Adjust the percentage as needed */
+  max-height: 80vh;
+  /* Adjust the viewport height as needed */
+  margin: auto;
+  /* Center the image horizontally */
+  display: block;
+  /* This is necessary to apply margin: auto */
 }
 
 .listing-contact-info p {
-  margin-bottom: 5px; /* Smaller bottom margin for a compact look */
+  margin-bottom: 5px;
+  /* Smaller bottom margin for a compact look */
 }
 
 .listing-contact-info p:last-child {
-  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+  margin-bottom: 0;
+  /* Remove bottom margin for the last paragraph */
 }
 
 .contact-message {
-  font-weight: bold; /* Makes text bold */
-  font-style: normal; /* Overrides any previous italic styling if needed */
-  margin-top: 10px; /* Adds a bit of space above the contact message */
+  font-weight: bold;
+  /* Makes text bold */
+  font-style: normal;
+  /* Overrides any previous italic styling if needed */
+  margin-top: 10px;
+  /* Adds a bit of space above the contact message */
 }
 
 .distance-calculator-caption {
@@ -243,16 +277,16 @@
 /* Responsive design adjustments */
 @media (max-width: 768px) {
   .listing-detail-content {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .listing-detail-images,
   .listing-detail-info {
-      width: 100%;
+    width: 100%;
   }
 
   .listing-detail-info {
-      padding: 20px;
+    padding: 20px;
   }
 
 }
