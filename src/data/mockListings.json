@@ -1,250 +1,318 @@
 [
-    {
-        "id": 1,
-        "propertyType": "Full Property",
-        "title": "Modern 2-BR Apartment Downtown",
-        "description": "A sleek, modern apartment with a spacious living room and a fully equipped kitchen.",
-        "price": 1800,
-        "securityDeposit": 900,
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "utilitiesIncluded": "Yes",
-        "nearestUniversity": "University of Arizona",
-        "laundry": "In Unit",
-        "parking": "Yes",
-        "pets": "Yes",
-        "airConditioning": "Yes",
-        "heating": "Yes",
-        "distanceToUniversity": "3.5",
-        "amenities": ["High-Speed Internet", "Balcony", "Gym Access"],
-        "address": "456 City Center Ave, Tucson, AZ",
-        "displayAddress": "Yes",
-        "ownerContact": {
-            "phoneNumber": "555-0102",
-            "email": "downtown.apartments@example.com",
-            "displayPhone": "Yes",
-            "displayEmail": "Yes",
-            "contactMessage": "For more information or to book a viewing, please call or email."
-        },
-        "leaseStartDate": "2023-08-01",
-        "leaseEndDate": "2024-07-31",
-        "availableUnits": 3,
-        "propertyImages": ["/Images/ID 1/Pic 1.webp", "/Images/ID 1/Pic 2.webp", "/Images/ID 1/Pic 3.webp", "/Images/ID 1/Pic 4.webp", "/Images/ID 1/Pic 5.webp"],
-        "floorplanImages": ["/Images/ID 1/Floorplan 1 .png"]
+  {
+    "id": 1,
+    "propertyType": "Full Property",
+    "title": "Modern 2-BR Apartment Downtown",
+    "description": "A sleek, modern apartment with a spacious living room and a fully equipped kitchen.",
+    "price": 1800,
+    "securityDeposit": 900,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "utilitiesIncluded": "Yes",
+    "nearestUniversity": "University of Arizona",
+    "laundry": "In Unit",
+    "parking": "Yes",
+    "pets": "Yes",
+    "airConditioning": "Yes",
+    "heating": "Yes",
+    "distanceToUniversity": "3.5",
+    "amenities": [
+      "High-Speed Internet",
+      "Balcony",
+      "Gym Access"
+    ],
+    "address": "456 City Center Ave, Tucson, AZ",
+    "displayAddress": "Yes",
+    "ownerContact": {
+      "phoneNumber": "555-0102",
+      "email": "downtown.apartments@example.com",
+      "displayPhone": "Yes",
+      "displayEmail": "Yes",
+      "contactMessage": "For more information or to book a viewing, please call or email."
     },
-    
-    {
-        "id": 2,
-        "propertyType": "Full Property",
-        "title": "Cozy 3-BR Family Home",
-        "description": "A charming home in a quiet neighborhood with a private backyard and a garage.",
-        "price": 2200,
-        "securityDeposit": 1100,
-        "bedrooms": 3,
-        "bathrooms": 2.5,
-        "utilitiesIncluded": "No",
-        "nearestUniversity": "Arizona State University",
-        "laundry": "Shared",
-        "parking": "No",
-        "pets": "No",
-        "airConditioning": "Yes",
-        "heating": "Yes",
-        "distanceToUniversity": "5.2",
-        "amenities": ["Private Yard", "Garage", "Fireplace"],
-        "address": "1036 E Orange St, Tempe, AZ",
-        "displayAddress": "Yes",
-        "ownerContact": {
-            "phoneNumber": "555-0234",
-            "email": "suburbia.homes@example.com",
-            "displayPhone": "No",
-            "displayEmail": "Yes",
-            "contactMessage": "Send an email to schedule a visit or ask questions."
-        },
-        "leaseStartDate": "2023-09-01",
-        "leaseEndDate": "2024-08-31",
-        "availableUnits": 1,
-        "propertyImages": ["/Images/ID 2/Pic 1.webp", "/Images/ID 2/Pic 2.webp", "/Images/ID 2/Pic 3.webp",  "/Images/ID 2/Pic 4.webp",  "/Images/ID 2/Pic 5.webp"],
-        "floorplanImages": ["/Images/ID 2/Floorplan.webp"]
+    "leaseStartDate": "2023-08-01",
+    "leaseEndDate": "2024-07-31",
+    "availableUnits": 3,
+    "propertyImages": [
+      "/Images/ID 1/Pic 1.webp",
+      "/Images/ID 1/Pic 2.webp",
+      "/Images/ID 1/Pic 3.webp",
+      "/Images/ID 1/Pic 4.webp",
+      "/Images/ID 1/Pic 5.webp"
+    ],
+    "floorplanImages": [
+      "/Images/ID 1/Floorplan 1 .png"
+    ]
+  },
+  {
+    "id": 2,
+    "propertyType": "Full Property",
+    "title": "Cozy 3-BR Family Home",
+    "description": "A charming home in a quiet neighborhood with a private backyard and a garage.",
+    "price": 2200,
+    "securityDeposit": 1100,
+    "bedrooms": 3,
+    "bathrooms": 2.5,
+    "utilitiesIncluded": "No",
+    "nearestUniversity": "Arizona State University",
+    "laundry": "Shared",
+    "parking": "No",
+    "pets": "No",
+    "airConditioning": "Yes",
+    "heating": "Yes",
+    "distanceToUniversity": "5.2",
+    "amenities": [
+      "Private Yard",
+      "Garage",
+      "Fireplace"
+    ],
+    "address": "1036 E Orange St, Tempe, AZ",
+    "displayAddress": "Yes",
+    "ownerContact": {
+      "phoneNumber": "555-0234",
+      "email": "suburbia.homes@example.com",
+      "displayPhone": "No",
+      "displayEmail": "Yes",
+      "contactMessage": "Send an email to schedule a visit or ask questions."
     },
-    {
-        "id": 3,
-        "propertyType": "Individual Room",
-        "title": "Spacious 4-BR Shared House",
-        "description": "A large house with a shared kitchen, living area, and garden.",
-        "totalBedrooms": 4,
-        "availableBedrooms": [
-            {
-                "bedroomNumber": 1,
-                "status": "Open",
-                "rent": 600,
-                "securityDeposit": 300,
-                "bathroom": "Private",
-                "size": "130 sqft",
-                "bedroomImage": ["/Images/ID 3/Bedroom1.jpeg"]
-            },
-            {
-                "bedroomNumber": 2,
-                "status": "Full",
-                "rent": "N/A",
-                "bathroom": "Shared with Bedroom 3",
-                "size": "110 sqft"
-            },
-            {
-                "bedroomNumber": 3,
-                "status": "Open",
-                "rent": 550,
-                "securityDeposit": 300,
-                "bathroom": "Shared with Bedroom 2",
-                "size": "115 sqft",
-                "bedroomImage": ["/Images/ID 3/Bedroom2.jpeg"]
-            },
-            {
-                "bedroomNumber": 4,
-                "status": "Full",
-                "rent": "N/A",
-                "bathroom": "Private",
-                "size": "150 sqft"
-            }
-        ],
-        "nearestUniversity": "Northern Arizona University",
-        "laundry": "None",
-        "parking": "With additional fee",
-        "pets": "Discuss with owner",
-        "airConditioning": "Yes",
-        "heating": "Yes",
-        "utilitiesIncluded": "Yes",
-        "distanceToUniversity": "1.8",
-        "amenities": ["Garden", "Parking", "Laundry Room"],
-        "address": "321 Shared Street, Flagstaff, AZ",
-        "displayAddress": "No",
-        "ownerContact": {
-            "phoneNumber": "555-0345",
-            "email": "shared.house@example.com",
-            "displayPhone": "Yes",
-            "displayEmail": "No",
-            "contactMessage": "Call for more details or to book a viewing."
-        },
-        "leaseStartDate": "2023-07-15",
-        "leaseEndDate": "2024-06-30",
-        "availableUnits": 1,
-        "propertyImages": ["/Images/ID 3/Pic 1.jpg", "/Images/ID 3/Pic 2.jpeg", "/Images/ID 3/Pic 3.jpeg", "/Images/ID 3/Pic 4.jpeg", "/Images/ID 3/Pic 5.jpeg" ],
-        "floorplanImages": ["/Images/ID 3/Floorplan.webp"]
-    },
-    {
-        "id": 4,
-        "propertyType": "Individual Room",
-        "title": "Luxury Downtown Lofts",
-        "description": "Contemporary lofts with all amenities included, in the heart of the city.",
-        "totalBedrooms": 5,
-        "availableBedrooms": [
-            {
-                "bedroomNumber": 1,
-                "status": "Open",
-                "rent": 700,
-                "securityDeposit": 350,
-                "bathroom": "Private",
-                "size": "200 sqft",
-                "bedroomImage": ["/Images/ID 4/Bedroom1.jpeg"]
-            },
-            {
-                "bedroomNumber": 2,
-                "status": "Open",
-                "rent": 650,
-                "securityDeposit": 325,
-                "bathroom": "Shared",
-                "size": "150 sqft",
-                "bedroomImage": ["/Images/ID 4/Bedroom2.jpeg"]
-            },
-            {
-                "bedroomNumber": 3,
-                "status": "Open",
-                "rent": 650,
-                "securityDeposit": 325,
-                "bathroom": "Shared",
-                "size": "150 sqft",
-                "bedroomImage": ["/Images/ID 4/Bedroom3.jpeg"]
-            },
-            {
-                "bedroomNumber": 4,
-                "status": "Open",
-                "rent": 680,
-                "securityDeposit": 340,
-                "bathroom": "Private",
-                "size": "180 sqft",
-                "bedroomImage": ["/Images/ID 4/Bedroom4.jpeg"]
-            },
-            {
-                "bedroomNumber": 5,
-                "status": "Open",
-                "rent": 750,
-                "securityDeposit": 375,
-                "bathroom": "Private",
-                "size": "180 sqft",
-                "bedroomImage": ["/Images/ID 4/Bedroom5.jpeg"]
-            }
-        ],
-        "nearestUniversity": "University of Arizona",
-        "laundry": "In Unit",
-        "parking": "Yes",
-        "pets": "Yes",
-        "airConditioning": "Yes",
-        "heating": "Yes",
-        "utilitiesIncluded": "Yes",
-        "distanceToUniversity": "0.5",
-        "amenities": ["Rooftop Pool", "Gym", "24/7 Security"],
-        "address": "987 Urban Ave, Tucson, AZ",
-        "displayAddress": "Yes",
-        "ownerContact": {
-            "phoneNumber": "555-0456",
-            "email": "downtown.lofts@example.com",
-            "displayPhone": "Yes",
-            "displayEmail": "Yes",
-            "contactMessage": "Contact us through phone or email for inquiries."
-        },
-        "leaseStartDate": "2023-08-01",
-        "leaseEndDate": "2024-07-31",
-        "availableUnits": 2,
-        "propertyImages": ["/Images/ID 4/Pic 1.jpeg", "/Images/ID 4/Pic 2.jpeg", "/Images/ID 4/Pic 3.jpeg", "/Images/ID 4/Pic 4.jpeg", "/Images/ID 4/Pic 5.jpeg"],
-        "floorplanImages": ["/Images/ID 4/Floorplan.jpeg"]
-    },
-
-    {
-        "id": 5,
-        "propertyType": "Full Property",
-        "title": "Stylish 1-BR Apartment near Campus",
-        "description": "A modern 1-bedroom apartment with a cozy atmosphere and easy access to campus.",
-        "price": 1400,
-        "securityDeposit": 700,
-        "bedrooms": 1,
-        "bathrooms": 1,
-        "utilitiesIncluded": "Yes",
-        "nearestUniversity": "University of Arizona",
-        "laundry": "On Site",
-        "parking": "No",
-        "pets": "No",
-        "airConditioning": "Yes",
-        "heating": "Yes",
-        "distanceToUniversity": "0.8",
-        "amenities": ["Pool", "Fitness Center", "Wi-Fi"],
-        "address": "123 Campus Street, Tucson, AZ",
-        "displayAddress": "Yes",
-        "ownerContact": {
-          "phoneNumber": "555-0567",
-          "email": "campus.apartments@example.com",
-          "displayPhone": "Yes",
-          "displayEmail": "Yes",
-          "contactMessage": "Call or email for inquiries."
-        },
-        "leaseStartDate": "2023-07-15",
-        "leaseEndDate": "2024-07-14",
-        "availableUnits": 2,
-        "propertyImages": [
-            "/Images/ID 5/Pic 1.jpeg", "/Images/ID 5/Pic 2.jpeg", "/Images/ID 5/Pic 3.jpeg", "/Images/ID 4/Pic 5.jpeg", "/Images/ID 5/Pic 5.jpeg"
-        ],
-        "floorplanImages": ["/Images/ID 5/Floorplan.webp"]
+    "leaseStartDate": "2023-09-01",
+    "leaseEndDate": "2024-08-31",
+    "availableUnits": 1,
+    "propertyImages": [
+      "/Images/ID 2/Pic 1.webp",
+      "/Images/ID 2/Pic 2.webp",
+      "/Images/ID 2/Pic 3.webp",
+      "/Images/ID 2/Pic 4.webp",
+      "/Images/ID 2/Pic 5.webp"
+    ],
+    "floorplanImages": [
+      "/Images/ID 2/Floorplan.webp"
+    ]
+  },
+  {
+    "id": 3,
+    "propertyType": "Individual Room",
+    "title": "Spacious 4-BR Shared House",
+    "description": "A large house with a shared kitchen, living area, and garden.",
+    "totalBedrooms": 4,
+    "availableBedrooms": [
+      {
+        "bedroomNumber": 1,
+        "status": "Open",
+        "rent": 600,
+        "securityDeposit": 300,
+        "bathroom": "Private",
+        "size": "130 sqft",
+        "bedroomImage": [
+          "/Images/ID 3/Bedroom1.jpeg"
+        ]
       },
-
-
+      {
+        "bedroomNumber": 2,
+        "status": "Full",
+        "rent": "N/A",
+        "bathroom": "Shared with Bedroom 3",
+        "size": "110 sqft"
+      },
+      {
+        "bedroomNumber": 3,
+        "status": "Open",
+        "rent": 550,
+        "securityDeposit": 300,
+        "bathroom": "Shared with Bedroom 2",
+        "size": "115 sqft",
+        "bedroomImage": [
+          "/Images/ID 3/Bedroom2.jpeg"
+        ]
+      },
+      {
+        "bedroomNumber": 4,
+        "status": "Full",
+        "rent": "N/A",
+        "bathroom": "Private",
+        "size": "150 sqft"
+      }
+    ],
+    "nearestUniversity": "Northern Arizona University",
+    "laundry": "None",
+    "parking": "With additional fee",
+    "pets": "Discuss with owner",
+    "airConditioning": "Yes",
+    "heating": "Yes",
+    "utilitiesIncluded": "Yes",
+    "distanceToUniversity": "1.8",
+    "amenities": [
+      "Garden",
+      "Parking",
+      "Laundry Room"
+    ],
+    "address": "321 Shared Street, Flagstaff, AZ",
+    "displayAddress": "No",
+    "ownerContact": {
+      "phoneNumber": "555-0345",
+      "email": "shared.house@example.com",
+      "displayPhone": "Yes",
+      "displayEmail": "No",
+      "contactMessage": "Call for more details or to book a viewing."
+    },
+    "leaseStartDate": "2023-07-15",
+    "leaseEndDate": "2024-06-30",
+    "availableUnits": 1,
+    "propertyImages": [
+      "/Images/ID 3/Pic 1.jpg",
+      "/Images/ID 3/Pic 2.jpeg",
+      "/Images/ID 3/Pic 3.jpeg",
+      "/Images/ID 3/Pic 4.jpeg",
+      "/Images/ID 3/Pic 5.jpeg"
+    ],
+    "floorplanImages": [
+      "/Images/ID 3/Floorplan.webp"
+    ]
+  },
+  {
+    "id": 4,
+    "propertyType": "Individual Room",
+    "title": "Luxury Downtown Lofts",
+    "description": "Contemporary lofts with all amenities included, in the heart of the city.",
+    "totalBedrooms": 5,
+    "availableBedrooms": [
+      {
+        "bedroomNumber": 1,
+        "status": "Open",
+        "rent": 700,
+        "securityDeposit": 350,
+        "bathroom": "Private",
+        "size": "200 sqft",
+        "bedroomImage": [
+          "/Images/ID 4/Bedroom1.jpeg"
+        ]
+      },
+      {
+        "bedroomNumber": 2,
+        "status": "Open",
+        "rent": 650,
+        "securityDeposit": 325,
+        "bathroom": "Shared",
+        "size": "150 sqft",
+        "bedroomImage": [
+          "/Images/ID 4/Bedroom2.jpeg"
+        ]
+      },
+      {
+        "bedroomNumber": 3,
+        "status": "Open",
+        "rent": 650,
+        "securityDeposit": 325,
+        "bathroom": "Shared",
+        "size": "150 sqft",
+        "bedroomImage": [
+          "/Images/ID 4/Bedroom3.jpeg"
+        ]
+      },
+      {
+        "bedroomNumber": 4,
+        "status": "Open",
+        "rent": 680,
+        "securityDeposit": 340,
+        "bathroom": "Private",
+        "size": "180 sqft",
+        "bedroomImage": [
+          "/Images/ID 4/Bedroom4.jpeg"
+        ]
+      },
+      {
+        "bedroomNumber": 5,
+        "status": "Open",
+        "rent": 750,
+        "securityDeposit": 375,
+        "bathroom": "Private",
+        "size": "180 sqft",
+        "bedroomImage": [
+          "/Images/ID 4/Bedroom5.jpeg"
+        ]
+      }
+    ],
+    "nearestUniversity": "University of Arizona",
+    "laundry": "In Unit",
+    "parking": "Yes",
+    "pets": "Yes",
+    "airConditioning": "Yes",
+    "heating": "Yes",
+    "utilitiesIncluded": "Yes",
+    "distanceToUniversity": "0.5",
+    "amenities": [
+      "Rooftop Pool",
+      "Gym",
+      "24/7 Security"
+    ],
+    "address": "987 Urban Ave, Tucson, AZ",
+    "displayAddress": "Yes",
+    "ownerContact": {
+      "phoneNumber": "555-0456",
+      "email": "downtown.lofts@example.com",
+      "displayPhone": "Yes",
+      "displayEmail": "Yes",
+      "contactMessage": "Contact us through phone or email for inquiries."
+    },
+    "leaseStartDate": "2023-08-01",
+    "leaseEndDate": "2024-07-31",
+    "availableUnits": 2,
+    "propertyImages": [
+      "/Images/ID 4/Pic 1.jpeg",
+      "/Images/ID 4/Pic 2.jpeg",
+      "/Images/ID 4/Pic 3.jpeg",
+      "/Images/ID 4/Pic 4.jpeg",
+      "/Images/ID 4/Pic 5.jpeg"
+    ],
+    "floorplanImages": [
+      "/Images/ID 4/Floorplan.jpeg"
+    ]
+  },
+  {
+    "id": 5,
+    "propertyType": "Full Property",
+    "title": "Stylish 1-BR Apartment near Campus",
+    "description": "A modern 1-bedroom apartment with a cozy atmosphere and easy access to campus.",
+    "price": 1400,
+    "securityDeposit": 700,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "utilitiesIncluded": "Yes",
+    "nearestUniversity": "University of Arizona",
+    "laundry": "On Site",
+    "parking": "No",
+    "pets": "No",
+    "airConditioning": "Yes",
+    "heating": "Yes",
+    "distanceToUniversity": "0.8",
+    "amenities": [
+      "Pool",
+      "Fitness Center",
+      "Wi-Fi"
+    ],
+    "address": "123 Campus Street, Tucson, AZ",
+    "displayAddress": "Yes",
+    "ownerContact": {
+      "phoneNumber": "555-0567",
+      "email": "campus.apartments@example.com",
+      "displayPhone": "Yes",
+      "displayEmail": "Yes",
+      "contactMessage": "Call or email for inquiries."
+    },
+    "leaseStartDate": "2023-07-15",
+    "leaseEndDate": "2024-07-14",
+    "availableUnits": 2,
+    "propertyImages": [
+      "/Images/ID 5/Pic 1.jpeg",
+      "/Images/ID 5/Pic 2.jpeg",
+      "/Images/ID 5/Pic 3.jpeg",
+      "/Images/ID 4/Pic 5.jpeg",
+      "/Images/ID 5/Pic 5.jpeg"
+    ],
+    "floorplanImages": [
+      "/Images/ID 5/Floorplan.webp"
+    ]
+  },
   {
     "id": 6,
     "propertyType": "Full Property",
@@ -262,7 +330,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "2.0",
-    "amenities": ["Backyard", "Garage", "Fireplace"],
+    "amenities": [
+      "Backyard",
+      "Garage",
+      "Fireplace"
+    ],
     "address": "456 Suburbia Ave, Tempe, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -276,11 +348,16 @@
     "leaseEndDate": "2024-08-14",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 6/Pic 1.jpeg", "/Images/ID 6/Pic 2.jpeg", "/Images/ID 6/Pic 3.jpeg", "/Images/ID 6/Pic 5.jpeg", "/Images/ID 6/Pic 5.jpeg"
+      "/Images/ID 6/Pic 1.jpeg",
+      "/Images/ID 6/Pic 2.jpeg",
+      "/Images/ID 6/Pic 3.jpeg",
+      "/Images/ID 6/Pic 5.jpeg",
+      "/Images/ID 6/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 6/Floorplan.jpeg"]
+    "floorplanImages": [
+      "/Images/ID 6/Floorplan.jpeg"
+    ]
   },
-
   {
     "id": 7,
     "propertyType": "Individual Room",
@@ -295,8 +372,9 @@
         "securityDeposit": 250,
         "bathroom": "Private",
         "size": "120 sqft",
-        "bedroomImage": ["/Images/ID 7/Bedroom1.jpeg"]
-
+        "bedroomImage": [
+          "/Images/ID 7/Bedroom1.jpeg"
+        ]
       },
       {
         "bedroomNumber": 2,
@@ -339,7 +417,11 @@
     "heating": "Yes",
     "utilitiesIncluded": "Yes",
     "distanceToUniversity": "1.5",
-    "amenities": ["Shared Kitchen", "Common Area", "Wi-Fi"],
+    "amenities": [
+      "Shared Kitchen",
+      "Common Area",
+      "Wi-Fi"
+    ],
     "address": "789 Shared Lane, Tempe, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -353,12 +435,16 @@
     "leaseEndDate": "2024-06-14",
     "availableUnits": 2,
     "propertyImages": [
-        "/Images/ID 7/Pic 1.jpeg", "/Images/ID 7/Pic 2.jpeg", "/Images/ID 7/Pic 3.jpeg", "/Images/ID 7/Pic 4.jpeg", "/Images/ID 7/Pic 5.jpeg"
+      "/Images/ID 7/Pic 1.jpeg",
+      "/Images/ID 7/Pic 2.jpeg",
+      "/Images/ID 7/Pic 3.jpeg",
+      "/Images/ID 7/Pic 4.jpeg",
+      "/Images/ID 7/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 7/Floorplan.webp"]
+    "floorplanImages": [
+      "/Images/ID 7/Floorplan.webp"
+    ]
   },
-  
-
   {
     "id": 8,
     "propertyType": "Individual Room",
@@ -373,7 +459,9 @@
         "securityDeposit": 200,
         "bathroom": "Shared with Bedroom 2",
         "size": "100 sqft",
-        "bedroomImage": ["/Images/ID 8/Bedroom1.jpeg"]
+        "bedroomImage": [
+          "/Images/ID 8/Bedroom1.jpeg"
+        ]
       },
       {
         "bedroomNumber": 2,
@@ -390,7 +478,9 @@
         "securityDeposit": 200,
         "bathroom": "Shared with Bedroom 4",
         "size": "100 sqft",
-        "bedroomImage": ["/Images/ID 8/Bedroom3.jpeg"]
+        "bedroomImage": [
+          "/Images/ID 8/Bedroom3.jpeg"
+        ]
       },
       {
         "bedroomNumber": 4,
@@ -409,7 +499,11 @@
     "heating": "Yes",
     "utilitiesIncluded": "Yes",
     "distanceToUniversity": "0.9",
-    "amenities": ["Scenic Views", "Common Kitchen", "On-Site Laundry"],
+    "amenities": [
+      "Scenic Views",
+      "Common Kitchen",
+      "On-Site Laundry"
+    ],
     "address": "123 Hilltop Drive, Flagstaff, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -423,11 +517,16 @@
     "leaseEndDate": "2024-06-30",
     "availableUnits": 2,
     "propertyImages": [
-        "/Images/ID 8/Pic 1.jpeg", "/Images/ID 8/Pic 2.jpeg", "/Images/ID 8/Pic 3.jpeg", "/Images/ID 8/Pic 4.jpeg", "/Images/ID 8/Pic 5.jpeg"
+      "/Images/ID 8/Pic 1.jpeg",
+      "/Images/ID 8/Pic 2.jpeg",
+      "/Images/ID 8/Pic 3.jpeg",
+      "/Images/ID 8/Pic 4.jpeg",
+      "/Images/ID 8/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 8/Floorplan.jpeg"]
+    "floorplanImages": [
+      "/Images/ID 8/Floorplan.jpeg"
+    ]
   },
-
   {
     "id": 9,
     "propertyType": "Full Property",
@@ -445,7 +544,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "1.0",
-    "amenities": ["Downtown Location", "On-Site Laundry", "Close to Public Transit"],
+    "amenities": [
+      "Downtown Location",
+      "On-Site Laundry",
+      "Close to Public Transit"
+    ],
     "address": "789 Downtown Blvd, Tucson, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -459,9 +562,15 @@
     "leaseEndDate": "2024-06-30",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 9/Pic 1.jpeg", "/Images/ID 9/Pic 2.jpg", "/Images/ID 9/Pic 3.jpeg", "/Images/ID 9/Pic 4.jpeg", "/Images/ID 9/Pic 5.jpeg"
+      "/Images/ID 9/Pic 1.jpeg",
+      "/Images/ID 9/Pic 2.jpg",
+      "/Images/ID 9/Pic 3.jpeg",
+      "/Images/ID 9/Pic 4.jpeg",
+      "/Images/ID 9/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 9/Floorplan.webp"]
+    "floorplanImages": [
+      "/Images/ID 9/Floorplan.webp"
+    ]
   },
   {
     "id": 10,
@@ -477,7 +586,9 @@
         "securityDeposit": 275,
         "bathroom": "Private",
         "size": "150 sqft",
-        "bedroomImage": ["/Images/ID 10/Bedroom1.jpeg"]
+        "bedroomImage": [
+          "/Images/ID 10/Bedroom1.jpeg"
+        ]
       },
       {
         "bedroomNumber": 2,
@@ -502,7 +613,11 @@
     "heating": "Yes",
     "utilitiesIncluded": "Yes",
     "distanceToUniversity": "1.2",
-    "amenities": ["Private Bathroom", "Quiet Neighborhood", "High-Speed Internet"],
+    "amenities": [
+      "Private Bathroom",
+      "Quiet Neighborhood",
+      "High-Speed Internet"
+    ],
     "address": "123 Quiet Lane, Tempe, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -516,9 +631,15 @@
     "leaseEndDate": "2024-07-31",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 10/Pic 1.jpeg", "/Images/ID 10/Pic 2.jpeg", "/Images/ID 10/Pic 3.jpeg", "/Images/ID 10/Pic 4.jpeg", "/Images/ID 10/Pic 5.jpeg"
+      "/Images/ID 10/Pic 1.jpeg",
+      "/Images/ID 10/Pic 2.jpeg",
+      "/Images/ID 10/Pic 3.jpeg",
+      "/Images/ID 10/Pic 4.jpeg",
+      "/Images/ID 10/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 10/Floorplan.jpeg"]
+    "floorplanImages": [
+      "/Images/ID 10/Floorplan.jpeg"
+    ]
   },
   {
     "id": 11,
@@ -537,7 +658,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "0.8",
-    "amenities": ["City View", "In-Unit Laundry", "Balcony"],
+    "amenities": [
+      "City View",
+      "In-Unit Laundry",
+      "Balcony"
+    ],
     "address": "456 Downtown Blvd, Tucson, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -551,9 +676,15 @@
     "leaseEndDate": "2024-07-14",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 11/Pic 1.jpeg", "/Images/ID 11/Pic 2.jpeg", "/Images/ID 11/Pic 3.jpeg", "/Images/ID 11/Pic 4.jpeg", "/Images/ID 11/Pic 5.jpeg"
+      "/Images/ID 11/Pic 1.jpeg",
+      "/Images/ID 11/Pic 2.jpeg",
+      "/Images/ID 11/Pic 3.jpeg",
+      "/Images/ID 11/Pic 4.jpeg",
+      "/Images/ID 11/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 11/Floorplan.webp"]
+    "floorplanImages": [
+      "/Images/ID 11/Floorplan.webp"
+    ]
   },
   {
     "id": 12,
@@ -572,7 +703,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "1.4",
-    "amenities": ["Private Pool", "Modern Design", "Spacious Living Areas"],
+    "amenities": [
+      "Private Pool",
+      "Modern Design",
+      "Spacious Living Areas"
+    ],
     "address": "789 Modern Way, Tempe, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -586,11 +721,16 @@
     "leaseEndDate": "2024-07-31",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 12/Pic 1.jpeg", "/Images/ID 12/Pic 2.jpeg", "/Images/ID 12/Pic 3.jpeg", "/Images/ID 12/Pic 4.jpeg", "/Images/ID 12/Pic 5.jpeg"
+      "/Images/ID 12/Pic 1.jpeg",
+      "/Images/ID 12/Pic 2.jpeg",
+      "/Images/ID 12/Pic 3.jpeg",
+      "/Images/ID 12/Pic 4.jpeg",
+      "/Images/ID 12/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 12/Floorplan.jpeg"]
+    "floorplanImages": [
+      "/Images/ID 12/Floorplan.jpeg"
+    ]
   },
-
   {
     "id": 13,
     "propertyType": "Individual Room",
@@ -618,7 +758,9 @@
         "rent": "900",
         "bathroom": "Shared with Bedroom 4",
         "size": "110 sqft",
-        "bedroomImage": ["/Images/ID 13/Bedroom3.jpeg"]
+        "bedroomImage": [
+          "/Images/ID 13/Bedroom3.jpeg"
+        ]
       },
       {
         "bedroomNumber": 4,
@@ -636,7 +778,11 @@
     "heating": "Yes",
     "utilitiesIncluded": "Yes",
     "distanceToUniversity": "1.2",
-    "amenities": ["Shared Kitchen", "Common Area", "Wi-Fi"],
+    "amenities": [
+      "Shared Kitchen",
+      "Common Area",
+      "Wi-Fi"
+    ],
     "address": "456 Shared Lane, Tucson, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -650,11 +796,16 @@
     "leaseEndDate": "2024-06-14",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 13/Pic 1.jpeg", "/Images/ID 13/Pic 2.jpeg", "/Images/ID 13/Pic 3.jpeg", "/Images/ID 13/Pic 4.jpeg", "/Images/ID 13/Pic 5.png"
+      "/Images/ID 13/Pic 1.jpeg",
+      "/Images/ID 13/Pic 2.jpeg",
+      "/Images/ID 13/Pic 3.jpeg",
+      "/Images/ID 13/Pic 4.jpeg",
+      "/Images/ID 13/Pic 5.png"
     ],
-    "floorplanImages": ["/Images/ID 13/Floorplan.webp"]
+    "floorplanImages": [
+      "/Images/ID 13/Floorplan.webp"
+    ]
   },
-
   {
     "id": 14,
     "propertyType": "Full Property",
@@ -672,7 +823,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "1.3",
-    "amenities": ["Private Pool", "Modern Design", "Spacious Living Areas"],
+    "amenities": [
+      "Private Pool",
+      "Modern Design",
+      "Spacious Living Areas"
+    ],
     "address": "101 Modern Avenue, Tempe, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -686,9 +841,15 @@
     "leaseEndDate": "2024-07-31",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 14/Pic 1.png", "/Images/ID 14/Pic 2.png", "/Images/ID 14/Pic 3.png", "/Images/ID 14/Pic 4.png", "/Images/ID 14/Pic 5.png"
+      "/Images/ID 14/Pic 1.png",
+      "/Images/ID 14/Pic 2.png",
+      "/Images/ID 14/Pic 3.png",
+      "/Images/ID 14/Pic 4.png",
+      "/Images/ID 14/Pic 5.png"
     ],
-    "floorplanImages": ["/Images/ID 14/Floorplan.jpeg"]
+    "floorplanImages": [
+      "/Images/ID 14/Floorplan.jpeg"
+    ]
   },
   {
     "id": 15,
@@ -707,7 +868,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "0.7",
-    "amenities": ["Downtown Location", "Elevator", "Coffee Shop Nearby"],
+    "amenities": [
+      "Downtown Location",
+      "Elevator",
+      "Coffee Shop Nearby"
+    ],
     "address": "567 Downtown Ave, Tempe, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -721,9 +886,15 @@
     "leaseEndDate": "2024-08-31",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 15/Pic 1.jpeg", "/Images/ID 15/Pic 2.jpeg", "/Images/ID 15/Pic 3.jpeg", "/Images/ID 15/Pic 4.jpeg", "/Images/ID 15/Pic 5.jpeg"
+      "/Images/ID 15/Pic 1.jpeg",
+      "/Images/ID 15/Pic 2.jpeg",
+      "/Images/ID 15/Pic 3.jpeg",
+      "/Images/ID 15/Pic 4.jpeg",
+      "/Images/ID 15/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 15/Floorplan.webp"]
+    "floorplanImages": [
+      "/Images/ID 15/Floorplan.webp"
+    ]
   },
   {
     "id": 16,
@@ -739,7 +910,9 @@
         "securityDeposit": 275,
         "bathroom": "Private",
         "size": "130 sqft",
-        "bedroomImage": ["/Images/ID 16/Bedroom1.jpeg"]
+        "bedroomImage": [
+          "/Images/ID 16/Bedroom1.jpeg"
+        ]
       },
       {
         "bedroomNumber": 2,
@@ -755,7 +928,9 @@
         "securityDeposit": 275,
         "bathroom": "Shared with Bedroom 4",
         "size": "130 sqft",
-        "bedroomImage": ["/Images/ID 16/Bedroom3.jpeg"]
+        "bedroomImage": [
+          "/Images/ID 16/Bedroom3.jpeg"
+        ]
       },
       {
         "bedroomNumber": 4,
@@ -773,7 +948,11 @@
     "heating": "Yes",
     "utilitiesIncluded": "Yes",
     "distanceToUniversity": "1.1",
-    "amenities": ["Shared Kitchen", "Friendly Housemates", "Backyard"],
+    "amenities": [
+      "Shared Kitchen",
+      "Friendly Housemates",
+      "Backyard"
+    ],
     "address": "789 Friendly Lane, Flagstaff, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -787,9 +966,15 @@
     "leaseEndDate": "2024-06-30",
     "availableUnits": 4,
     "propertyImages": [
-        "/Images/ID 16/Pic 1.jpeg", "/Images/ID 16/Pic 2.jpeg", "/Images/ID 16/Pic 3.jpeg", "/Images/ID 16/Pic 4.jpeg", "/Images/ID 16/Pic 5.jpeg"
+      "/Images/ID 16/Pic 1.jpeg",
+      "/Images/ID 16/Pic 2.jpeg",
+      "/Images/ID 16/Pic 3.jpeg",
+      "/Images/ID 16/Pic 4.jpeg",
+      "/Images/ID 16/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 16/Floorplan.gif"]
+    "floorplanImages": [
+      "/Images/ID 16/Floorplan.gif"
+    ]
   },
   {
     "id": 17,
@@ -808,7 +993,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "1.5",
-    "amenities": ["Garden", "Patio", "Nature Trails Nearby"],
+    "amenities": [
+      "Garden",
+      "Patio",
+      "Nature Trails Nearby"
+    ],
     "address": "123 Garden Path, Tucson, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -822,9 +1011,15 @@
     "leaseEndDate": "2024-07-31",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 17/Pic 1.jpeg", "/Images/ID 17/Pic 2.jpeg", "/Images/ID 17/Pic 3.jpeg", "/Images/ID 17/Pic 4.jpeg", "/Images/ID 17/Pic 5.jpeg"
+      "/Images/ID 17/Pic 1.jpeg",
+      "/Images/ID 17/Pic 2.jpeg",
+      "/Images/ID 17/Pic 3.jpeg",
+      "/Images/ID 17/Pic 4.jpeg",
+      "/Images/ID 17/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 17/Floorplan.jpeg"]
+    "floorplanImages": [
+      "/Images/ID 17/Floorplan.jpeg"
+    ]
   },
   {
     "id": 18,
@@ -840,7 +1035,9 @@
         "securityDeposit": 300,
         "bathroom": "Private",
         "size": "120 sqft",
-        "bedroomImage": ["/Images/ID 18/Bedroom1.jpeg"]
+        "bedroomImage": [
+          "/Images/ID 18/Bedroom1.jpeg"
+        ]
       },
       {
         "bedroomNumber": 2,
@@ -861,7 +1058,7 @@
         "status": "Full",
         "rent": "N/A",
         "bathroom": "Shared with Bedroom 2",
-        "size":"100 sqft"
+        "size": "100 sqft"
       }
     ],
     "nearestUniversity": "Arizona State University",
@@ -872,7 +1069,11 @@
     "heating": "Yes",
     "utilitiesIncluded": "Yes",
     "distanceToUniversity": "0.8",
-    "amenities": ["Private Bathroom", "Shared Kitchen", "Quiet House"],
+    "amenities": [
+      "Private Bathroom",
+      "Shared Kitchen",
+      "Quiet House"
+    ],
     "address": "456 Cozy Path, Tempe, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -886,9 +1087,15 @@
     "leaseEndDate": "2024-07-14",
     "availableUnits": 4,
     "propertyImages": [
-        "/Images/ID 18/Pic 1.jpeg", "/Images/ID 18/Pic 2.jpeg", "/Images/ID 18/Pic 3.jpeg", "/Images/ID 18/Pic 4.jpeg", "/Images/ID 18/Pic 5.jpeg"
+      "/Images/ID 18/Pic 1.jpeg",
+      "/Images/ID 18/Pic 2.jpeg",
+      "/Images/ID 18/Pic 3.jpeg",
+      "/Images/ID 18/Pic 4.jpeg",
+      "/Images/ID 18/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 18/Floorplan.webp"]
+    "floorplanImages": [
+      "/Images/ID 18/Floorplan.webp"
+    ]
   },
   {
     "id": 19,
@@ -907,7 +1114,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "1.2",
-    "amenities": ["City View", "Fitness Center", "Rooftop Terrace"],
+    "amenities": [
+      "City View",
+      "Fitness Center",
+      "Rooftop Terrace"
+    ],
     "address": "567 Cityscape Blvd, Flagstaff, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -921,9 +1132,15 @@
     "leaseEndDate": "2024-08-31",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 19/Pic 1.jpeg", "/Images/ID 19/Pic 2.jpeg", "/Images/ID 19/Pic 3.jpeg", "/Images/ID 19/Pic 4.jpeg", "/Images/ID 19/Pic 5.jpeg"
+      "/Images/ID 19/Pic 1.jpeg",
+      "/Images/ID 19/Pic 2.jpeg",
+      "/Images/ID 19/Pic 3.jpeg",
+      "/Images/ID 19/Pic 4.jpeg",
+      "/Images/ID 19/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 19/Floorplan.webp"]
+    "floorplanImages": [
+      "/Images/ID 19/Floorplan.webp"
+    ]
   },
   {
     "id": 20,
@@ -931,48 +1148,54 @@
     "title": "Spacious Room in Newly Renovated House",
     "description": "A spacious room in a newly renovated house with modern furnishings and a welcoming atmosphere.",
     "totalBedrooms": 5,
-  "availableBedrooms": [
-    {
-      "bedroomNumber": 1,
-      "status": "Open",
-      "rent": 650,
-      "securityDeposit": 325,
-      "bathroom": "Shared with Bedroom 1",
-      "size": "140 sqft",
-      "bedroomImage": ["/Images/ID 20/Bedroom1.jpeg"]
-    },
-    {
-      "bedroomNumber": 2,
-      "status": "Open",
-      "rent": 600,
-      "securityDeposit": 300,
-      "bathroom": "Shared with Bedroom 2",
-      "size": "120 sqft",
-      "bedroomImage": ["/Images/ID 20/Bedroom2.jpeg"]
-    },
-    {
-      "bedroomNumber": 3,
-      "status": "Full",
-      "rent": "N/A",
-      "bathroom": "Private",
-      "size": "130 sqft"
-    },
-    {
-      "bedroomNumber": 4,
-      "status": "Full",
-      "rent": "N/A",
-      "bathroom": "Shared with Bedroom 5",
-      "size": "125 sqft"
-    },
-    {
-      "bedroomNumber": 5,
-      "status": "Open",
-      "rent": 575,
-      "securityDeposit": 287,
-      "bathroom": "Shared with Bedroom 4",
-      "size": "115 sqft",
-      "bedroomImage": ["/Images/ID 20/Bedroom5.jpeg"]
-    }
+    "availableBedrooms": [
+      {
+        "bedroomNumber": 1,
+        "status": "Open",
+        "rent": 650,
+        "securityDeposit": 325,
+        "bathroom": "Shared with Bedroom 1",
+        "size": "140 sqft",
+        "bedroomImage": [
+          "/Images/ID 20/Bedroom1.jpeg"
+        ]
+      },
+      {
+        "bedroomNumber": 2,
+        "status": "Open",
+        "rent": 600,
+        "securityDeposit": 300,
+        "bathroom": "Shared with Bedroom 2",
+        "size": "120 sqft",
+        "bedroomImage": [
+          "/Images/ID 20/Bedroom2.jpeg"
+        ]
+      },
+      {
+        "bedroomNumber": 3,
+        "status": "Full",
+        "rent": "N/A",
+        "bathroom": "Private",
+        "size": "130 sqft"
+      },
+      {
+        "bedroomNumber": 4,
+        "status": "Full",
+        "rent": "N/A",
+        "bathroom": "Shared with Bedroom 5",
+        "size": "125 sqft"
+      },
+      {
+        "bedroomNumber": 5,
+        "status": "Open",
+        "rent": 575,
+        "securityDeposit": 287,
+        "bathroom": "Shared with Bedroom 4",
+        "size": "115 sqft",
+        "bedroomImage": [
+          "/Images/ID 20/Bedroom5.jpeg"
+        ]
+      }
     ],
     "nearestUniversity": "University of Arizona",
     "laundry": "On Site",
@@ -982,7 +1205,11 @@
     "heating": "Yes",
     "utilitiesIncluded": "Yes",
     "distanceToUniversity": "1.3",
-    "amenities": ["Newly Renovated", "Shared Kitchen", "Modern Furnishings"],
+    "amenities": [
+      "Newly Renovated",
+      "Shared Kitchen",
+      "Modern Furnishings"
+    ],
     "address": "789 Renovated Road, Tucson, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -996,9 +1223,15 @@
     "leaseEndDate": "2024-07-14",
     "availableUnits": 2,
     "propertyImages": [
-        "/Images/ID 20/Pic 1.jpeg", "/Images/ID 20/Pic 2.jpeg", "/Images/ID 20/Pic 3.jpeg", "/Images/ID 20/Pic 4.jpeg", "/Images/ID 20/Pic 5.jpeg"
+      "/Images/ID 20/Pic 1.jpeg",
+      "/Images/ID 20/Pic 2.jpeg",
+      "/Images/ID 20/Pic 3.jpeg",
+      "/Images/ID 20/Pic 4.jpeg",
+      "/Images/ID 20/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 20/Floorplan.webp"]
+    "floorplanImages": [
+      "/Images/ID 20/Floorplan.webp"
+    ]
   },
   {
     "id": 21,
@@ -1017,7 +1250,11 @@
     "airConditioning": "Yes",
     "heating": "Yes",
     "distanceToUniversity": "2.5",
-    "amenities": ["Private Garden", "High-Speed Internet", "Balcony"],
+    "amenities": [
+      "Private Garden",
+      "High-Speed Internet",
+      "Balcony"
+    ],
     "address": "1234 Townhouse Lane, Tucson, AZ",
     "displayAddress": "Yes",
     "ownerContact": {
@@ -1031,9 +1268,14 @@
     "leaseEndDate": "2024-07-31",
     "availableUnits": 1,
     "propertyImages": [
-        "/Images/ID 21/Pic 1.jpeg", "/Images/ID 21/Pic 2.jpeg", "/Images/ID 21/Pic 3.jpeg", "/Images/ID 21/Pic 4.jpeg", "/Images/ID 21/Pic 5.jpeg"
+      "/Images/ID 21/Pic 1.jpeg",
+      "/Images/ID 21/Pic 2.jpeg",
+      "/Images/ID 21/Pic 3.jpeg",
+      "/Images/ID 21/Pic 4.jpeg",
+      "/Images/ID 21/Pic 5.jpeg"
     ],
-    "floorplanImages": ["/Images/ID 21/Floorplan.jpeg"]
+    "floorplanImages": [
+      "/Images/ID 21/Floorplan.jpeg"
+    ]
   }
-  
 ]
