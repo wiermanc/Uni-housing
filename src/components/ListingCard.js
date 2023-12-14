@@ -51,3 +51,4 @@ function ListingCard({ listing }) {
 }
 
 export default ListingCard;
+
